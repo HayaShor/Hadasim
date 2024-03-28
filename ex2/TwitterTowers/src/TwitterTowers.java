@@ -33,7 +33,7 @@ public class TwitterTowers {
 					if(select==1)
 					{
 						double side=Math.sqrt(Math.pow((double)width,2)+Math.pow(width/2.0,2));
-						System.out.println("perimeter: "+(side*2)+width);
+						System.out.println("perimeter: "+((side*2)+width));
 					}
 					else
 						if(select==2)
