@@ -4,7 +4,6 @@ import corona from '../classes/corona'
 import axios from "axios";
 import Vaccine from "../classes/vaccine";
 import { useNavigate, useParams } from "react-router-dom";
-//זה האדיט עשיתי את כל האינפוטים עם הוואליו איך אני עושה שזה יעבוד?
 const Edit=()=>
 {
     let myParams = useParams();
@@ -44,8 +43,6 @@ const Edit=()=>
     {alert("💉added💉")}
     }
 
-    //התבלבלתי זה היה ניסיון קודם והעתקתי את הדף של האד
-    //לא נראה לי שצריך את האיז אדיט גם כי אני בדף של אדיט לא?
     const x = ()=>
     {
        {
@@ -53,7 +50,6 @@ const Edit=()=>
        }
     }
 
- //תעשי בצד
 
     return <div>
         {/* user detailes */}
