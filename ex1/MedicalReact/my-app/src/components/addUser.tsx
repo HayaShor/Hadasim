@@ -19,8 +19,6 @@ const Add=()=>
     //@ts-ignore
     const [vac4, setVac4] = useState<Vaccine>({})
 
-    const[isEdit, setIdEdit]=useState(false);
-
     const myNavigate=useNavigate();
 
   const myFun=()=>{
@@ -31,17 +29,10 @@ const Add=()=>
     
     const x = ()=>
     {
-       if(!isEdit)
-       {
         axios.put('http://localhost:1234/user/add',localUser)
         .then(()=>alert("user added!"));
         axios.put('http://localhost:1234/corona/add', localCorona)
         .then()
-       }
-       else
-       {
-        axios.post(`/edit/${localUser._id}`)
-       }
         myNavigate('/');
     }
 

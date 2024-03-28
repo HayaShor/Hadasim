@@ -34,9 +34,10 @@ myRouter.put('/add',(req,res)=>
 
 myRouter.post('/edit/:Id',(req,res)=>{
     let idFromUser=req.params.Id;
-    let Id=new ObjectId(idFromUser);
+    console.log(idFromUser)
+    //let Id=new ObjectId(idFromUser);
     let updateData=req.body;
-    coronaModel.findByIdAndUpdate(Id,updateData)
+    coronaModel.findByIdAndUpdate(idFromUser,updateData)
     .then((data)=>{res.json(data);})
     .catch((err)=>{console.log(err)});
 })

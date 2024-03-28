@@ -26,7 +26,6 @@ const Users=()=>
     <table className= "table table-bordered">
     <thead>
       <tr> 
-        <th>_id</th>
         <th>first-Name</th>
         <th>Last-name</th>
         <th>id</th>
@@ -41,7 +40,6 @@ const Users=()=>
         {list?.map((l?:user)=>
         (
         <tr /*id={l?._id}*/>
-        <td>{l?._id}</td>
         <td>{l?.fNmae}</td>
         <td>{l?.lName}</td>
         <td>{l?.id}</td>

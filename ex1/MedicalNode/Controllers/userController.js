@@ -36,8 +36,9 @@ myRouter.post('/edit/:id', (req,res)=>
 {
     let idFromUser=req.params.id;
     let user=req.body;
-    let id=new ObjectId(idFromUser);
-    userModel.findByIdAndUpdate(id,user)
+    console.log(111, idFromUser)
+    //let id=new ObjectId(idFromUser);
+    userModel.findByIdAndUpdate(idFromUser,user)
    .then((data)=>{res.json(data);})
    .catch((err)=>{console.log(err)});
 })
